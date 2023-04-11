@@ -43,13 +43,34 @@ super_mario_bros = Games(
     console="NES"
 )
 
+castlevania = Games(
+    name="Castlevania",
+    release_date="September 26, 1986",
+    console="NES"
+)
+
+excitebike = Games(
+    name="Excitebike",
+    release_date="30 November 1984",
+    console="NES"
+)
+
+THPS4 = Games(
+    name="Tony Hawk's Pro Skater 4",
+    release_date="23 October 2002",
+    console="PS2"
+)
+
 # Update "Games" table
 # session.add(tetris)
 # session.add(super_mario_bros)
+# session.add(castlevania)
+# session.add(excitebike)
+session.add(THPS4)
 
 
 # commit the session
-# session.commit()
+session.commit()
 
 # print table
 games = session.query(Games)
